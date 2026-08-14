@@ -110,6 +110,6 @@ if __name__ == '__main__':
     res = retriever.invoke("迷路")
     for r in res:
         print(r.page_content)
-        print("-"*20)
+        print("-"*30)
 
 
