@@ -1,0 +1,81 @@
+2026-08-14 12:21:35,316 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-08-14 12:21:35,316 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | 给我生成我的使用报告
+2026-08-14 12:21:40,524 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：get_user_id
+2026-08-14 12:21:40,524 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{}
+2026-08-14 12:21:40,525 - agent - INFO - middleware.py:24 - [tool monitor]工具get_user_id调用成功
+2026-08-14 12:21:40,525 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：get_current_month
+2026-08-14 12:21:40,525 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{}
+2026-08-14 12:21:40,526 - agent - INFO - middleware.py:24 - [tool monitor]工具get_current_month调用成功
+2026-08-14 12:21:40,527 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有4条消息。
+2026-08-14 12:21:40,527 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | 2025-12
+2026-08-14 12:21:43,451 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：fill_context_for_report
+2026-08-14 12:21:43,451 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{}
+2026-08-14 12:21:43,451 - agent - INFO - middleware.py:24 - [tool monitor]工具fill_context_for_report调用成功
+2026-08-14 12:21:43,453 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有6条消息。
+2026-08-14 12:21:43,453 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | fill_context_for_report已调用
+2026-08-14 12:21:46,329 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：fetch_external_data
+2026-08-14 12:21:46,329 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{'user_id': '1009', 'month': '2025-12'}
+2026-08-14 12:21:46,331 - agent - INFO - middleware.py:24 - [tool monitor]工具fetch_external_data调用成功
+2026-08-14 12:21:46,332 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有8条消息。
+2026-08-14 12:21:46,332 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | {"特征": "80㎡两居 | 养宠 | 仿实木", "效率": "宠物毛发清理:93%\\n自动回充成功率:98%", "耗材": "胶刷寿命:剩余35天\\n滤网寿命:剩余35天", "对比": "养宠家庭中清洁效率前10%"}
+2026-08-14 12:21:49,729 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：rag_summarize
+2026-08-14 12:21:49,729 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{'query': '养宠家庭扫地机器人毛发清理与胶刷滤网保养建议'}
+2026-08-14 12:21:57,157 - agent - INFO - middleware.py:24 - [tool monitor]工具rag_summarize调用成功
+2026-08-14 12:21:57,158 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有10条消息。
+2026-08-14 12:21:57,158 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | 未提供参考资料，无法总结养宠家庭扫地机器人毛发清理与胶刷滤网保养建议。
+2026-08-14 12:28:41,562 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-08-14 12:28:41,563 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | 你好
+2026-08-14 12:29:47,023 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-08-14 12:29:47,023 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | 在我当前的天气下，机器人如何保养
+2026-08-14 12:29:55,505 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：get_user_location
+2026-08-14 12:29:55,505 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{}
+2026-08-14 12:29:55,507 - agent - INFO - middleware.py:24 - [tool monitor]工具get_user_location调用成功
+2026-08-14 12:29:55,540 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有3条消息。
+2026-08-14 12:29:55,540 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | 深圳
+2026-08-14 12:30:01,387 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：get_weather
+2026-08-14 12:30:01,388 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{'city': '深圳'}
+2026-08-14 12:30:01,388 - agent - INFO - middleware.py:24 - [tool monitor]工具get_weather调用成功
+2026-08-14 12:30:01,389 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：rag_summarize
+2026-08-14 12:30:01,389 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{'query': '潮湿天气雨季扫地机器人保养维护注意事项'}
+2026-08-14 12:30:07,879 - agent - INFO - middleware.py:24 - [tool monitor]工具rag_summarize调用成功
+2026-08-14 12:30:08,222 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有6条消息。
+2026-08-14 12:30:08,222 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | 暂无参考资料，无法总结潮湿天气雨季扫地机器人保养维护注意事项。
+2026-08-14 12:30:15,850 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：rag_summarize
+2026-08-14 12:30:15,850 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{'query': '晴天干燥天气扫地机器人日常保养维护清洁'}
+2026-08-14 12:30:22,201 - agent - INFO - middleware.py:24 - [tool monitor]工具rag_summarize调用成功
+2026-08-14 12:30:22,374 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有8条消息。
+2026-08-14 12:30:22,374 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | 未提供参考资料，无法进行总结。
+2026-08-14 12:30:25,222 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：rag_summarize
+2026-08-14 12:30:25,222 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{'query': '扫地机器人保养方法'}
+2026-08-14 12:30:29,209 - agent - INFO - middleware.py:24 - [tool monitor]工具rag_summarize调用成功
+2026-08-14 12:30:29,466 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有10条消息。
+2026-08-14 12:30:29,466 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | 参考资料中未提供扫地机器人保养方法的相关信息。
+2026-08-14 12:31:25,440 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-08-14 12:31:25,440 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | 形成报告
+2026-08-14 12:31:31,908 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：get_user_id
+2026-08-14 12:31:31,908 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{}
+2026-08-14 12:31:31,908 - agent - INFO - middleware.py:24 - [tool monitor]工具get_user_id调用成功
+2026-08-14 12:31:31,908 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：get_current_month
+2026-08-14 12:31:31,909 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{}
+2026-08-14 12:31:31,909 - agent - INFO - middleware.py:24 - [tool monitor]工具get_current_month调用成功
+2026-08-14 12:31:31,995 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有4条消息。
+2026-08-14 12:31:31,995 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | 2025-10
+2026-08-14 12:31:34,336 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：fill_context_for_report
+2026-08-14 12:31:34,336 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{}
+2026-08-14 12:31:34,337 - agent - INFO - middleware.py:24 - [tool monitor]工具fill_context_for_report调用成功
+2026-08-14 12:31:34,625 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有6条消息。
+2026-08-14 12:31:34,625 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | fill_context_for_report已调用
+2026-08-14 12:31:41,350 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：fetch_external_data
+2026-08-14 12:31:41,350 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{'user_id': '1003', 'month': '2025-10'}
+2026-08-14 12:31:41,351 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：rag_summarize
+2026-08-14 12:31:41,351 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{'query': '扫地机器人日常维护保养与使用建议'}
+2026-08-14 12:31:41,352 - agent - INFO - middleware.py:24 - [tool monitor]工具fetch_external_data调用成功
+2026-08-14 12:31:45,443 - agent - INFO - middleware.py:24 - [tool monitor]工具rag_summarize调用成功
+2026-08-14 12:31:45,752 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有9条消息。
+2026-08-14 12:31:45,752 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | 参考资料为空，无法总结扫地机器人日常维护保养与使用建议。
+2026-08-14 13:55:03,945 - agent - INFO - vector_store.py:74 - [加载知识库]D:\pythoncode\智能体agent开发\data\扫地机器人100问.pdf内容已经存在知识库内，跳过
+2026-08-14 13:55:03,950 - agent - INFO - vector_store.py:74 - [加载知识库]D:\pythoncode\智能体agent开发\data\扫地机器人100问2.txt内容已经存在知识库内，跳过
+2026-08-14 13:55:03,955 - agent - INFO - vector_store.py:74 - [加载知识库]D:\pythoncode\智能体agent开发\data\扫拖一体机器人100问.txt内容已经存在知识库内，跳过
+2026-08-14 13:55:03,961 - agent - INFO - vector_store.py:74 - [加载知识库]D:\pythoncode\智能体agent开发\data\故障排除.txt内容已经存在知识库内，跳过
+2026-08-14 13:55:03,966 - agent - INFO - vector_store.py:74 - [加载知识库]D:\pythoncode\智能体agent开发\data\维护保养.txt内容已经存在知识库内，跳过
+2026-08-14 13:55:03,971 - agent - INFO - vector_store.py:74 - [加载知识库]D:\pythoncode\智能体agent开发\data\选购指南.txt内容已经存在知识库内，跳过
