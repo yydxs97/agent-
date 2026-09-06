@@ -1,0 +1,41 @@
+2026-09-02 19:53:38,387 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-09-02 19:53:38,388 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | 北京天气如何
+2026-09-02 19:53:42,118 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：get_weather
+2026-09-02 19:53:42,119 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{'city_name': '北京'}
+2026-09-02 19:53:42,326 - agent - INFO - middleware.py:24 - [tool monitor]工具get_weather调用成功
+2026-09-02 19:53:42,522 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有3条消息。
+2026-09-02 19:53:42,523 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | 北京北京市，天气：晴，温度：25℃
+2026-09-02 19:53:58,962 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-09-02 19:53:58,963 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | 成都天气如何
+2026-09-02 19:54:03,673 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：get_weather
+2026-09-02 19:54:03,673 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{'city_name': '成都'}
+2026-09-02 19:54:03,862 - agent - INFO - middleware.py:24 - [tool monitor]工具get_weather调用成功
+2026-09-02 19:54:04,069 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有3条消息。
+2026-09-02 19:54:04,069 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | 四川成都市，天气：多云，温度：29℃
+2026-09-02 19:55:18,881 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-09-02 19:55:18,882 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | 扫地机器人成都如何保养
+2026-09-02 19:55:25,690 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：rag_summarize
+2026-09-02 19:55:25,690 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{'query': '扫地机器人保养方法 维护保养注意事项'}
+2026-09-02 19:55:25,692 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：get_weather
+2026-09-02 19:55:25,692 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{'city_name': '成都'}
+2026-09-02 19:55:25,893 - agent - INFO - middleware.py:24 - [tool monitor]工具get_weather调用成功
+2026-09-02 19:55:32,706 - agent - INFO - middleware.py:24 - [tool monitor]工具rag_summarize调用成功
+2026-09-02 19:55:32,913 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有4条消息。
+2026-09-02 19:55:32,913 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | 四川成都市，天气：多云，温度：29℃
+2026-09-02 19:55:38,261 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：rag_summarize
+2026-09-02 19:55:38,261 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{'query': '扫地机器人清洁保养 尘盒清理 滤芯更换 边刷维护 传感器清洁'}
+2026-09-02 19:55:44,716 - agent - INFO - middleware.py:24 - [tool monitor]工具rag_summarize调用成功
+2026-09-02 19:55:45,214 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有6条消息。
+2026-09-02 19:55:45,214 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | 参考资料中未提供与扫地机器人清洁保养、尘盒清理、滤芯更换、边刷维护及传感器清洁相关的信息。
+2026-09-02 19:55:49,651 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：rag_summarize
+2026-09-02 19:55:49,651 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{'query': '扫地机器人日常维护保养指南'}
+2026-09-02 19:55:54,686 - agent - INFO - middleware.py:24 - [tool monitor]工具rag_summarize调用成功
+2026-09-02 19:55:54,980 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有8条消息。
+2026-09-02 19:55:54,980 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | 未提供参考资料，无法总结扫地机器人日常维护保养指南。
+2026-09-02 19:56:12,543 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：rag_summarize
+2026-09-02 19:56:12,543 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{'query': '扫地机器人保养'}
+2026-09-02 19:56:19,899 - agent - INFO - middleware.py:24 - [tool monitor]工具rag_summarize调用成功
+2026-09-02 19:56:20,140 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有10条消息。
+2026-09-02 19:56:20,140 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | 未提供扫地机器人保养的参考资料，无法概括。
+2026-09-02 19:57:43,792 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-09-02 19:57:43,793 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | 如何健身保持健康
