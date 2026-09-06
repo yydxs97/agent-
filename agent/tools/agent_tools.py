@@ -1,4 +1,7 @@
 import os
+
+import requests
+
 from utils.logger_handler import logger
 from langchain_core.tools import tool
 from rag.rag_service import RagSummarizeService
@@ -21,8 +24,30 @@ def rag_summarize(query: str) -> str:
 
 
 @tool(description="获取指定城市的天气，以消息字符串的形式返回")
-def get_weather(city: str) -> str:
-    return f"城市{city}天气为晴天，气温26摄氏度，空气湿度50%，南风1级，AQI21，最近6小时降雨概率极低"
+def get_weather(city_name: str) -> str:
+    url = "https://restapi.amap.com/v3/weather/weatherInfo"
+    params = {
+        "key": "ab3019827962daabc72edd5a550b0e1c",  # ⚠️ 强烈建议替换为你自己在高德开放平台申请的真实 Key
+        "city": city_name,
+        "extensions": "base"
+    }
+
+    try:
+        response = requests.get(url, params=params, timeout=5)
+        data = response.json()
+
+        if data.get("status") == "1" and data.get("lives"):
+            live = data["lives"][0]
+            return f"{live['province']}{live['city']}，天气：{live['weather']}，温度：{live['temperature']}℃"
+        else:
+            # 暴露真实错误信息，例如 "CUQPS_HAS_EXCEEDED_THE_LIMIT" 或 "用户 key 不正确"
+            error_msg = data.get("info", "未知错误")
+            logger.warning(f"[get_weather] 获取 {city_name} 天气失败: {error_msg}")
+            return f"获取失败，原因: {error_msg}"
+
+    except requests.exceptions.RequestException as e:
+        logger.error(f"[get_weather] 请求异常: {e}")
+        return "获取失败，网络请求异常"
 
 
 @tool(description="获取用户所在城市的名称，以纯字符串形式返回")
